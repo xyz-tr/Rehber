@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+  
+   
+   <!-- Base application theme. -->
+   <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+      <!-- Customize your theme here. -->
+      <item name="colorPrimary">@color/colorPrimary</item>
+      <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+      <item name="colorAccent">@color/colorAccent</item>
+      <item name="android:windowActivityTransitions">true</item>
+      <item name="android:windowContentTransitions">true</item>
+
+   </style>
+   
+   <style name="AppDialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+      <item name="android:windowIsFloating">true</item>
+      <item name="android:windowCloseOnTouchOutside">true</item>
+      <item name="android:windowContentOverlay">@null</item>
+      <item name="android:windowFrame">@null</item>
+      <item name="android:windowFullscreen">false</item>
+      <item name="android:windowActivityTransitions">true</item>
+      <item name="android:windowAnimationStyle">@style/DialogAnimationBounce</item>
+   </style>
+   
+   <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+      <item name="colorButtonNormal">@color/red_400</item>
+      <item name="android:textColor">@color/material_black</item>
+      <item name="android:backgroundTint">@color/whitePrimary</item>
+   </style>
+   
+   <style name="DialogAnimationOutbox">
+      <item name="android:windowEnterAnimation">@anim/in_out_enter</item>
+      <item name="android:windowExitAnimation">@anim/in_out_exit</item>
+   </style>
+   
+   <style name="DialogAnimationShrink">
+      <item name="android:windowEnterAnimation">@anim/shrink_enter</item>
+      <item name="android:windowExitAnimation">@anim/shrink_exit</item>
+   </style>
+   
+   <style name="DialogAnimationShrinkDown">
+      <item name="android:windowEnterAnimation">@anim/shrink_enter</item>
+      <item name="android:windowExitAnimation">@anim/slide_down_exit</item>
+   </style>
+   
+   <style name="DialogAnimationShrinkLeft">
+      <item name="android:windowEnterAnimation">@anim/shrink_enter</item>
+      <item name="android:windowExitAnimation">@anim/slide_left_exit</item>
+   </style>
+   
+   <style name="DialogAnimationShrinkRight">
+      <item name="android:windowEnterAnimation">@anim/shrink_enter</item>
+      <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+   </style>
+   
+   <style name="DialogAnimationShrinkUp">
+      <item name="android:windowEnterAnimation">@anim/shrink_enter</item>
+      <item name="android:windowExitAnimation">@anim/slide_up_exit</item>
+   </style>
+   
+   <style name="DialogAnimationBounce">
+      <item name="android:windowEnterAnimation">@anim/bounce_2</item>
+      <item name="android:windowExitAnimation">@anim/shrink_exit</item>
+   </style>
+   
+   <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+   
+   <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+   
+   <style name="ToolbarBase" parent="Base.V7.Widget.AppCompat.Toolbar">
+      <item name="android:layout_width">match_parent</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:minHeight">?attr/actionBarSize</item>
+      <item name="android:background">@color/colorPrimary</item>
+      <item name="android:layout_gravity">fill_horizontal</item>
+      <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
+      <item name="android:theme">@style/AppTheme.AppBarOverlay</item>
+   </style>
+   
+  
+   
+   <style name="BaseText" parent="@android:style/TextAppearance.Medium">
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_width">wrap_content</item>
+   </style>
+   
+   <style name="ContactText" parent="BaseText">
+      <item name="android:textSize">17sp</item>
+      <item name="android:textColor">@color/contact_item_text_color</item>
+      <item name="android:layout_gravity">center_vertical</item>
+      <item name="android:layout_marginStart">@dimen/activity_horizontal_margin</item>
+      <item name="android:ellipsize">end</item>
+      <item name="android:fontFamily">@font/cabin</item>
+      <item name="android:maxLength">22</item>
+      <item name="android:maxLines">1</item>
+   </style>
+   
+   <style name="CallLogTextFirst" parent="BaseText">
+      <item name="android:textSize">16sp</item>
+      <item name="android:textColor">@color/call_log_item_text_color</item>
+      <item name="android:fontFamily">@font/callb</item>
+      <item name="android:ellipsize">end</item>
+      <item name="android:maxLength">20</item>
+      <item name="android:maxLines">1</item>
+   
+   </style>
+   
+   <style name="CallLogTextSecondary" parent="BaseText">
+      <item name="android:textSize">13sp</item>
+      <item name="android:textColor">@color/call_log_seconds_item_text_color</item>
+      <item name="android:fontFamily">@font/call</item>
+   
+   </style>
+   
+   <style name="CallDetailsText" parent="@android:style/TextAppearance.Medium">
+      <item name="android:textSize">14sp</item>
+      <item name="android:fontFamily">@font/call</item>
+      <item name="android:maxLines">1</item>
+      <item name="android:focusable">false</item>
+      <item name="android:clickable">false</item>
+      <item name="android:textColor">@color/summary_first_color</item>
+   </style>
+   
+   <style name="CallDetailsTextSecondary" parent="@android:style/TextAppearance.Medium">
+      <item name="android:textSize">14sp</item>
+      <item name="android:fontFamily">@font/mono</item>
+      <item name="android:gravity">end</item>
+      <item name="android:textAlignment">textEnd</item>
+   </style>
+   
+   <style name="ChangeColorText" parent="@android:style/TextAppearance.Medium">
+      <item name="android:textSize">19sp</item>
+      <item name="android:textColor">@color/grey_800</item>
+      <item name="android:fontFamily">@font/z</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_width">wrap_content</item>
+      <item name="android:layout_marginStart">32dp</item>
+   
+   </style>
+   
+   <style name="BackupText" parent="@android:style/TextAppearance.Medium">
+      <item name="android:textSize">@dimen/backup_text_size</item>
+      <item name="android:fontFamily">@font/madelena</item>
+      <item name="android:layout_width">match_parent</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:paddingBottom">@dimen/backup_text_vertical_padding</item>
+      <item name="android:paddingTop">@dimen/backup_text_vertical_padding</item>
+      <item name="android:gravity">center</item>
+      <item name="android:textColor">@color/backup_text_color</item>
+   </style>
+   
+   <style name="BackupTitleText" parent="BaseText">
+      <item name="android:layout_centerHorizontal">true</item>
+      <item name="android:fontFamily">@font/texb</item>
+      <item name="android:textSize">20sp</item>
+      <item name="android:textColor">@color/backup_title_text_color</item>
+   </style>
+   
+   <style name="Snack_Bar">
+      <item name="android:background">@color/snack_bar_bg_default</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_width">match_parent</item>
+      <item name="android:paddingLeft">@dimen/snack_bar_left_right_padding</item>
+      <item name="android:paddingRight">@dimen/snack_bar_left_right_padding</item>
+      <item name="android:paddingTop">@dimen/snack_bar_top_padding</item>
+      <item name="android:paddingBottom">@dimen/snack_bar_bottom_padding</item>
+      <item name="android:layout_gravity">bottom</item>
+      <item name="android:minHeight">@dimen/snack_bar_height</item>
+      <item name="android:maxHeight">@dimen/snack_bar_max_height</item>
+      <item name="android:clickable">true</item>
+      <item name="android:orientation">horizontal</item>
+   </style>
+   
+   <style name="Snack_Bar_Title">
+      <item name="android:textColor">@android:color/white</item>
+      <item name="android:textSize">@dimen/snack_bar_text_size</item>
+      <item name="android:layout_width">0dp</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_gravity">center_vertical</item>
+      <item name="android:textAppearance">@style/SnackBar.TextAppearance.Regular</item>
+      <item name="android:textAllCaps">false</item>
+      <item name="maxLine">6</item>
+   </style>
+   
+   <style name="Snack_Bar_Button" parent="@android:style/Widget.ActionButton">
+      <item name="android:layout_height">match_parent</item>
+      <item name="android:layout_width">wrap_content</item>
+      <item name="android:visibility">gone</item>
+      <item name="android:minHeight">0dp</item>
+      <item name="android:textAppearance">@style/SnackBar.TextAppearance.Medium</item>
+      <item name="android:textSize">@dimen/snack_bar_action_text_size</item>
+      <item name="android:layout_gravity">center_vertical</item>
+   </style>
+   
+   <style name="SnackBar.TextAppearance.Regular" parent="android:TextAppearance">
+      <item name="android:typeface">sans</item>
+   </style>
+   
+   <style name="SnackBar.TextAppearance.Medium" parent="android:TextAppearance">
+      <item name="android:typeface">sans</item>
+      <item name="android:textStyle">bold</item>
+   </style>
+   
+   <style name="MSV_Icon">
+      <item name="android:background">?android:attr/selectableItemBackground</item>
+   </style>
+   
+   <style name="MSV_SearchBox">
+      <item name="android:textColor">#212121</item>
+      <item name="android:textColorHint">#727272</item>
+      <item name="android:textSize">16sp</item>
+      <item name="android:imeOptions">actionSearch</item>
+      <item name="android:inputType">textNoSuggestions</item>
+   </style>
+   
+   <style name="MSV_NoFilter">
+      <item name="android:textColor">@color/black_55</item>
+      <item name="android:textSize">14sp</item>
+      <item name="android:textStyle">bold</item>
+   </style>
+   
+   <style name="MSV_SelectFilterTextSectionName">
+      <item name="android:textSize">14sp</item>
+      <item name="android:textColor">@color/black_55</item>
+   </style>
+   
+   <style name="MSV_SelectFilterTextFilterName">
+      <item name="android:textSize">16sp</item>
+      <item name="android:textColor">@color/black_85</item>
+   </style>
+   
+   <style name="MSV_FilterTextName">
+      <item name="android:textSize">13sp</item>
+      <item name="android:textColor">@color/black_85</item>
+   </style>
+   
+   <style name="MSV_SectionSelectFilter">
+      <item name="android:textSize">14sp</item>
+      <item name="android:textColor">@color/black_55</item>
+      <item name="android:fontFamily">sans-serif-medium</item>
+   </style>
+   
+   <style name="ContactDetailPopupAnimation">
+      <item name="android:windowEnterAnimation">@anim/shrink_enter</item>
+      <item name="android:windowExitAnimation">@anim/fade_exit_fast</item>
+   </style>
+   
+   <style name="ContactDetailPopupItemText" parent="@android:style/TextAppearance.Medium">
+      <item name="android:paddingStart">@dimen/contact_detail_popup_item_padding_start</item>
+      <item name="android:textSize">@dimen/contact_detail_popup_item_text_size</item>
+      <item name="android:textColor">@color/second_text_color</item>
+      <item name="android:layout_width">wrap_content</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:paddingBottom">@dimen/contact_detail_popup_item_vertical_padding</item>
+      <item name="android:paddingTop">@dimen/contact_detail_popup_item_vertical_padding</item>
+      <item name="android:fontFamily">@font/r</item>
+   </style>
+   
+   <style name="ToolbarTitleStyle" parent="@android:style/TextAppearance.Medium">
+      <item name="android:fontFamily">@font/dosis_bold</item>
+      <item name="android:textSize">19sp</item>
+   </style>
+   
+   <style name="ContactsMergeCheckboxStyle" parent="Base.Theme.AppCompat">
+      <item name="colorAccent">#5C7497</item>
+      <item name="android:textColorSecondary">#5C7497</item>
+   </style>
+   
+   <style name="AppTheme.NoActionBar">
+      <item name="windowActionBar">false</item>
+      <item name="windowNoTitle">true</item>
+   </style>
+   
+   <style name="BackgroundWorksActivityDialogContentMono" parent="TextAppearance.AppCompat.Small">
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_width">wrap_content</item>
+      <item name="fontFamily">@font/droidsansmono</item>
+   </style>
+   
+   <style name="BackgroundWorksActivityDialogContent">
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_width">wrap_content</item>
+      <item name="fontFamily">@font/acarisans_medium</item>
+   </style>
+   
+   <style name="stored_contacts_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/droidsansmono</item>
+      <item name="android:textSize">14sp</item>
+      <item name="android:textColor">@color/white_trans68</item>
+    </style>
+
+   <style name="stored_contacts_text2">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+      <item name="android:textColor">@color/white_trans55</item>
+    </style>
+
+
+</resources>

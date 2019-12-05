@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:background="@color/light_background"
+   app:cardCornerRadius="0dp"
+   app:cardElevation="0dp"
+   app:contentPadding="0dp"
+   android:id="@+id/labels">
+   
+   <RelativeLayout
+      android:id="@+id/rootRelativeLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="fill"
+      android:clickable="true"
+      android:focusable="true"
+      android:paddingBottom="6dp">
+      
+      <TextView
+         android:id="@+id/header"
+         android:clickable="false"
+         android:focusable="false"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginStart="@dimen/activity_vertical_margin"
+         android:layout_marginTop="@dimen/activity_horizontal_margin"
+         android:text="@string/groups"
+         android:textAllCaps="true"
+         android:textSize="13sp" />
+      
+      <ImageView
+         android:id="@+id/labelIcon"
+         android:layout_width="24dp"
+         android:layout_height="24dp"
+         android:layout_below="@id/header"
+         android:layout_marginStart="@dimen/activity_vertical_margin"
+         android:layout_marginTop="22dp"
+         app:srcCompat="@drawable/label" />
+      
+      <com.google.android.flexbox.FlexboxLayout
+         android:id="@+id/labelLayout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/header"
+         android:layout_marginStart="@dimen/activity_vertical_margin"
+         android:layout_marginTop="19dp"
+         android:layout_marginEnd="@dimen/activity_vertical_margin"
+         android:layout_toEndOf="@id/labelIcon"
+         android:orientation="horizontal"
+         app:flexDirection="row"
+         app:flexWrap="wrap">
+      
+      </com.google.android.flexbox.FlexboxLayout>
+      
+      <LinearLayout
+         android:layout_marginTop="8dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/labelLayout"
+         android:layout_alignStart="@id/labelLayout"
+         android:clickable="true"
+         android:focusable="true"
+         android:paddingEnd="8dp"
+         android:paddingStart="8dp"
+         android:background="@drawable/ripple_all"
+         android:id="@+id/createNewGroup">
+   
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/nunito_regular"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="20dp" />
+   
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/nunito_regular"
+            android:paddingTop="4dp"
+            android:text="@string/create_new_group"
+            android:textColor="#BE616161"
+            android:textSize="14dp" />
+      </LinearLayout>
+   
+   </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headerBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/accountIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:baselineAlignBottom="true" />
+
+        <TextView
+            android:id="@+id/accountText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:fontFamily="@font/cevairb"
+            android:textColor="@color/whitePrimary"
+            android:textSize="19sp"
+            tools:text="Account 5434937530" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/chatParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/messageIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/messenger_message" />
+
+        <TextView
+            android:id="@+id/accountTextChat"
+            style="@style/ContactDetailPopupItemText"
+            android:text="@string/mesaj"
+            android:clickable="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/voiceParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/voiceCallIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/messenger_voice_call" />
+        
+        <TextView
+            android:id="@+id/accountTextVoice"
+            style="@style/ContactDetailPopupItemText"
+            android:text="@string/sesli_arama" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/videoParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/videoCallIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:baselineAlignBottom="true"
+            app:srcCompat="@drawable/messenger_video_call" />
+        
+        <TextView
+            android:id="@+id/accountTextVideo"
+            style="@style/ContactDetailPopupItemText"
+            android:text="@string/goruntulu_arama" />
+
+    </LinearLayout>
+
+</LinearLayout>

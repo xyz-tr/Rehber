@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".xyz.contact.activity.account.AccountsActivity"
+   android:background="@color/light_background">
+   
+   <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      style="@style/ToolbarBase"
+      app:popupTheme="@style/AppTheme.PopupOverlay"
+      app:navigationIcon="@drawable/left_arrow"
+      app:title="Hesaplar"
+      android:layout_alignParentTop="true" />
+   
+   <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/recyclerView"
+      tools:listitem="@layout/account_item"
+      android:layout_below="@+id/toolbar" />
+   
+   <ProgressBar
+      android:id="@+id/progress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:indeterminate="true" />
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   package="com.tr.hsyn.telefonrehberi">
+   
+   <uses-permission android:name="android.permission.READ_CONTACTS" />
+   <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+   <uses-permission android:name="android.permission.READ_PROFILE" />
+   <uses-permission android:name="android.permission.READ_CALL_LOG" />
+   <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+   <uses-permission android:name="android.permission.CALL_PHONE" />
+   <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+   <uses-permission android:name="android.permission.READ_SMS" />
+   <uses-permission android:name="android.permission.SEND_SMS" />
+   <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+   <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- suppress DeprecatedClassUsageInspection -->
+   <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+   <uses-permission
+      android:name="android.permission.MODIFY_PHONE_STATE"
+      tools:ignore="ProtectedPermissions" />
+   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+   <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+   <uses-permission android:name="android.permission.RECORD_AUDIO" />
+   <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+   <uses-permission android:name="android.permission.INTERNET" />
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   
+   <application
+      android:name=".xyz.main.AppRehber"
+      android:allowBackup="false"
+      android:icon="@mipmap/call"
+      android:label="@string/app_name"
+      android:roundIcon="@mipmap/call"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme"
+      tools:ignore="AllowBackup,GoogleAppIndexingWarning,LockedOrientationActivity"
+      tools:replace="android:allowBackup,android:roundIcon,android:icon">
+      <service
+         android:name=".xyz.call.listener.CallListenerService"
+         android:enabled="true"
+         android:exported="false"/>
+      
+      <activity android:name=".xyz.contact.activity.stored.ContactsActivity" />
+      <activity android:name=".xyz.ptt.activity.relation.RelationsActivity" />
+      <activity
+         android:name=".xyz.main.activity.BackgroundWorksActivity"
+         android:configChanges="orientation"
+         android:parentActivityName=".xyz.main.MainActivity" />
+      <activity
+         android:name=".xyz.ptt.activity.PttActivity"
+         android:label="@string/title_activity_ptt"
+         android:theme="@style/AppTheme.NoActionBar" />
+      <activity android:name=".xyz.main.MainActivity">
+         <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            
+            <category android:name="android.intent.category.LAUNCHER" />
+         </intent-filter>
+      </activity>
+      <activity
+         android:name=".xyz.contact.activity.merge.MergedContactsActivity"
+         android:screenOrientation="portrait" />
+      <activity
+         android:name=".xyz.contact.activity.merge.ContactsMergeActivity"
+         android:screenOrientation="portrait" />
+      <activity
+         android:name=".xyz.contact.activity.Settings"
+         android:screenOrientation="portrait" />
+      <activity
+         android:name=".xyz.call.detail.activity.CallDetails"
+         android:configChanges="orientation"
+         android:parentActivityName=".xyz.main.MainActivity" >
+         
+         <intent-filter>
+            <action android:name="com.tr.xyz.call.COMMENT"/>
+         </intent-filter>
+      </activity>
+      
+      <service
+         android:name=".xyz.call.main.service.RandomCallsService"
+         android:exported="false" />
+      <service android:name=".util.audio.AudioService" />
+      
+      <activity
+         android:name=".xyz.call.main.activity.RandomCallsActivity"
+         android:screenOrientation="portrait" />
+      
+      <receiver
+         android:name=".xyz.call.listener.CallManager"
+         android:enabled="true"
+         android:exported="true">
+         <intent-filter android:priority="999">
+            <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            <action android:name="android.intent.action.PHONE_STATE" />
+         </intent-filter>
+      </receiver>
+      
+      <activity
+         android:name=".xyz.contact.activity.ContactSearchActivity"
+         android:configChanges="orientation"
+         android:excludeFromRecents="true" />
+      <activity
+         android:name=".xyz.call.main.activity.search.CallLogSearchActivity"
+         android:configChanges="orientation"
+         android:excludeFromRecents="true"
+         android:parentActivityName=".xyz.main.MainActivity" />
+      <activity
+         android:name=".xyz.call.main.activity.most.MostCallsActivity"
+         android:configChanges="orientation"
+         android:excludeFromRecents="true"
+         android:parentActivityName=".xyz.main.MainActivity" />
+      <activity
+         android:name=".xyz.call.main.activity.ShowCallsActivity"
+         android:configChanges="orientation"
+         android:excludeFromRecents="true"
+         android:parentActivityName=".xyz.call.detail.activity.CallDetails" />
+      <activity
+         android:name=".xyz.contact.activity.account.AccountsActivity"
+         android:configChanges="orientation"
+         android:excludeFromRecents="true"
+         android:parentActivityName=".xyz.main.MainActivity" />
+      <activity
+         android:name=".xyz.call.main.activity.backup.BackupCallLogActivity"
+         android:configChanges="orientation"
+         android:excludeFromRecents="true"
+         android:parentActivityName=".xyz.main.MainActivity" />
+      <activity
+         android:name=".xyz.call.main.activity.backup.ShowBackupCallsActivity"
+         android:configChanges="orientation"
+         android:excludeFromRecents="true"
+         android:parentActivityName=".xyz.call.main.activity.backup.BackupCallLogActivity" />
+      <activity
+         android:name=".xyz.call.main.activity.most.ShowMostCallsActivity"
+         android:configChanges="orientation"
+         android:excludeFromRecents="true"
+         android:parentActivityName=".xyz.call.main.activity.most.MostCallsActivity" />
+      <activity
+         android:name=".xyz.contact.activity.group.GroupActivity"
+         android:configChanges="orientation"
+         android:excludeFromRecents="true"
+         android:parentActivityName=".xyz.contact.activity.group.GroupActivity" />
+      <activity
+         android:name=".xyz.contact.activity.group.LabeledContactsActivity"
+         android:configChanges="orientation"
+         android:excludeFromRecents="true" />
+      <activity
+         android:name=".xyz.contact.activity.CheckableContactsActivity"
+         android:configChanges="orientation"
+         android:excludeFromRecents="true"
+         android:parentActivityName=".xyz.contact.activity.group.LabeledContactsActivity" />
+      <activity
+         android:name=".xyz.contact.activity.detail.ContactDetailsActivity"
+         android:configChanges="orientation" />
+      <activity android:name=".xyz.call.detail.NotificationsNoSignActivity" />
+      <activity
+         android:name=".xyz.main.activity.SignActivity"
+         android:screenOrientation="portrait" />
+      <activity
+         android:name=".xyz.contact.activity.stored.ContactInfoActivityDialog"
+         android:theme="@style/AppDialogTheme" />
+      
+      <service
+         android:name=".xyz.ptt.nlservice.NLService"
+         android:enabled="true"
+         android:exported="true"
+         android:icon="@mipmap/call"
+         android:label="Rehber"
+         android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+         <intent-filter android:priority="999">
+            <action android:name="android.service.notification.NotificationListenerService" />
+         </intent-filter>
+      </service>
+   </application>
+
+</manifest>

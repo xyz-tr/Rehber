@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SimpleCodeReview">
+    <reviewInfoList>
+      <reviewInfo id="201911301343164316" infoToJson="{&quot;id&quot;:&quot;201911301343164316&quot;,&quot;checkUser&quot;:&quot;hghg&quot;,&quot;toCheckUser&quot;:&quot;hghg&quot;,&quot;defectDesc&quot;:&quot;hyello&quot;,&quot;defectType&quot;:&quot;异常&quot;,&quot;reviesDesc&quot;:&quot;kjkj&quot;,&quot;projectName&quot;:&quot;TelefonRehberi&quot;,&quot;fileDetailPath&quot;:&quot;C:/telefonrehberi/app/src/main/java/com/tr/hsyn/telefonrehberi/xyz/call/detail/commentator/CallCommentator.java&quot;,&quot;opraTime&quot;:&quot;2019-11-30 13:43:16&quot;,&quot;startLineNumber&quot;:80,&quot;endLineNumber&quot;:80,&quot;startOffset&quot;:3338,&quot;endOffset&quot;:3338,&quot;verticalScrollOffset&quot;:0}" />
+    </reviewInfoList>
+    <cacheLastReviewInfo>
+      <cacheReviewInfo id="201911301343164316" infoToJson="{&quot;id&quot;:&quot;201911301343164316&quot;,&quot;checkUser&quot;:&quot;hghg&quot;,&quot;toCheckUser&quot;:&quot;hghg&quot;,&quot;defectDesc&quot;:&quot;hyello&quot;,&quot;defectType&quot;:&quot;异常&quot;,&quot;reviesDesc&quot;:&quot;kjkj&quot;,&quot;projectName&quot;:&quot;TelefonRehberi&quot;,&quot;fileDetailPath&quot;:&quot;C:/telefonrehberi/app/src/main/java/com/tr/hsyn/telefonrehberi/xyz/call/detail/commentator/CallCommentator.java&quot;,&quot;opraTime&quot;:&quot;2019-11-30 13:43:16&quot;,&quot;startLineNumber&quot;:80,&quot;endLineNumber&quot;:80,&quot;startOffset&quot;:3338,&quot;endOffset&quot;:3338,&quot;verticalScrollOffset&quot;:0}" />
+    </cacheLastReviewInfo>
+  </component>
+</project>

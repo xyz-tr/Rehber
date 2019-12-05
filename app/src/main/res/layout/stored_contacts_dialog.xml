@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   tools:ignore="HardcodedText"
+   android:background="@drawable/texture_zigzag">
+   
+   
+   
+   <RelativeLayout
+      android:id="@+id/header"
+      android:layout_width="match_parent"
+      android:layout_height="45dp">
+      
+      <TextView
+         android:layout_centerVertical="true"
+         android:id="@+id/title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+         android:layout_marginStart="32dp"
+         android:fontFamily="@font/now_black"
+         android:text="Title"
+         android:textColor="@color/c_antique_white"
+         android:textSize="18sp" />
+      
+      <ImageView
+         android:clickable="true"
+         android:focusable="true"
+         android:background="@drawable/ripple_amber"
+         android:id="@+id/delete"
+         android:padding="14dp"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_alignParentEnd="true"
+         android:layout_marginEnd="0dp"
+         android:src="@drawable/delete_white"
+         android:layout_centerVertical="true"/>
+      
+      <ImageView
+         android:padding="8dp"
+         android:clickable="true"
+         android:focusable="true"
+         android:background="@drawable/ripple_amber"
+         android:visibility="gone"
+         tools:visibility="visible"
+         android:id="@+id/reload"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/add_user"
+         android:layout_toStartOf="@id/delete"
+         android:layout_centerVertical="true"/>
+      
+   </RelativeLayout>
+   
+   <TextView
+      android:id="@+id/hr"
+      android:layout_below="@id/header"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="@color/white_trans16"/>
+   
+   
+   <GridLayout
+      android:id="@+id/grid"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/hr"
+      android:layout_marginTop="@dimen/dimen_8dp"
+      android:columnCount="2"
+      android:orientation="horizontal"
+      android:paddingStart="@dimen/dimen_16dp"
+      android:paddingEnd="@dimen/dimen_16dp">
+   
+      <TextView
+         style="@style/stored_contacts_text"
+         android:text="Numara         : " />
+   
+      <TextView
+         android:id="@+id/number"
+         style="@style/stored_contacts_text2"
+         android:text="5434937530" />
+   
+      <TextView
+         style="@style/stored_contacts_text"
+         android:text="Kayıt Tarihi   : " />
+   
+      <TextView
+         android:id="@+id/save_date"
+         style="@style/stored_contacts_text2"
+         android:text="19.22.2019" />
+   
+      <TextView
+         style="@style/stored_contacts_text"
+         android:text="Bakılma Sayısı : " />
+   
+      <TextView
+         android:id="@+id/look_count"
+         style="@style/stored_contacts_text2"
+         android:text="99" />
+   
+      <TextView
+         style="@style/stored_contacts_text"
+         android:text="Son Bakılma T. : " />
+   
+      <TextView
+         android:id="@+id/look_date"
+         style="@style/stored_contacts_text2"
+         android:text="12.04.1981" />
+   
+      <TextView
+         style="@style/stored_contacts_text"
+         android:text="Güncelleme T.  : " />
+   
+      <TextView
+         android:id="@+id/updated_date"
+         style="@style/stored_contacts_text2"
+         android:text="12.04.1981" />
+   
+      <TextView
+         style="@style/stored_contacts_text"
+         android:text="Silinme T.     : " />
+   
+      <TextView
+         android:id="@+id/deleted_date"
+         style="@style/stored_contacts_text2"
+         android:text="12.04.1981" />
+   </GridLayout>
+   
+   <com.tr.hsyn.telefonrehberi.util.ui.RelativeLayoutx
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/grid"
+      android:layout_marginTop="@dimen/dimen_16dp"
+      android:paddingStart="@dimen/dimen_8dp"
+      android:paddingEnd="@dimen/dimen_8dp"
+      app:maxHeightx="250dp">
+   
+      <TextView
+         android:id="@+id/desc_const"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:fontFamily="@font/poppins_black"
+         android:text="Açıklamalar"
+         android:textColor="@color/white_trans68"
+         android:textSize="18sp" />
+   
+      <ScrollView
+         android:id="@+id/scroll_view"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/desc_const"
+         android:scrollbarAlwaysDrawHorizontalTrack="true"
+         android:scrollbarSize="2dp">
+      
+         <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="2dp">
+         
+            <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+            
+               <TextView
+                  android:id="@+id/description"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/mono"
+                  android:text="12.04.1981"
+                  android:textSize="15sp"
+                  android:textColor="@color/white_trans55" />
+            </RelativeLayout>
+         </HorizontalScrollView>
+   
+      </ScrollView>
+   
+      <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/scroll_view"
+         android:layout_centerHorizontal="true"
+         android:text="@string/the_end"
+         android:textColor="@color/white_trans55"
+         android:textSize="22sp" />
+
+   </com.tr.hsyn.telefonrehberi.util.ui.RelativeLayoutx>
+
+</RelativeLayout>

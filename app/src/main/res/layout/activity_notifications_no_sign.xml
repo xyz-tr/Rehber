@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".xyz.call.detail.NotificationsNoSignActivity"
+   android:background="@color/yellow_200">
+
+   <androidx.appcompat.widget.Toolbar
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/yellow_600"
+      android:elevation="6dp"
+      android:layout_alignParentTop="true"
+      android:id="@+id/toolbar"
+      app:title="Bildirimler"
+      app:navigationIcon="@drawable/groups_favorite"
+      app:titleTextColor="@color/blue_700"/>
+
+   <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/toolbar"
+      android:fillViewport="true">
+
+      <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+ 
+         <TextView
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Arama kayıtlarında Veli ile ilgili yapılan tarama sonucunda çıkarılan bazı paylaşılabilir bilgiler göreceksin aşağıda."
+            android:textColor="@color/blue_grey_500"
+            android:textSize="16sp" />
+
+         <LinearLayout
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionText"
+            android:layout_marginTop="64dp">
+            
+            <include layout="@layout/notification_item"/>
+            
+         </LinearLayout>
+         
+      </RelativeLayout>
+      
+   </ScrollView>
+   
+   
+   
+</RelativeLayout>

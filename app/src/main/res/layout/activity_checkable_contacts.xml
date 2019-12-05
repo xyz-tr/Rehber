@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".xyz.contact.activity.CheckableContactsActivity"
+    android:layout_gravity="fill">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:titleTextColor="@color/whitePrimary"
+        android:background="@color/colorPrimary"
+        tools:title="Add To Group"
+        app:navigationIcon="@drawable/arrow_down_double" 
+        android:id="@+id/toolbar"
+        android:layout_gravity="fill_horizontal"/>
+    
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        tools:listitem="@layout/checkable_contact_item"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_gravity="fill"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    
+    
+</FrameLayout>

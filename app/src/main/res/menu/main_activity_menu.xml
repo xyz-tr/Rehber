@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_change_theme"
+        android:title="Renk Değiştir" />
+    
+    <item
+       android:id="@+id/dial"
+       android:icon="@drawable/dial"
+       android:title="Ara"
+       app:showAsAction="always" />
+    <item
+       android:id="@+id/main_activity_sign"
+       android:menuCategory="secondary"
+       android:title="Giriş Yap"
+       app:showAsAction="never" />
+    
+
+    <item
+       android:id="@+id/activity_main_background_works"
+       android:title="Arkaplan İşlemleri"
+       app:showAsAction="never" />
+</menu>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   tools:context=".xyz.ptt.activity.relation.RelationsActivity">
+
+   <androidx.appcompat.widget.Toolbar
+      style="@style/ToolbarBase"
+      android:id="@+id/toolbar"
+      app:title="Bağlantılar"
+      app:navigationIcon="@drawable/left_arrow"
+      app:subtitle="9"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentStart="true"/>
+   
+   <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/recycler_view"
+      android:layout_below="@id/toolbar"
+      tools:listitem="@layout/activity_relation_item"/>
+   
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools">
+   
+   <data>
+      <variable
+         name="count"
+         type="com.tr.hsyn.telefonrehberi.xyz.contact.activity.merge.Count" />
+   </data>
+   
+   <RelativeLayout
+      
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/light_background"
+      tools:context=".xyz.contact.activity.merge.ContactsMergeActivity"
+      tools:menu="@menu/activity_contacts_merge_menu">
+      
+      <!--app:navigationIcon="@drawable/left_arrow"-->
+      
+      <androidx.appcompat.widget.Toolbar
+         android:id="@+id/toolbar"
+         style="@style/ToolbarBase"
+         android:layout_width="match_parent"
+         android:layout_height="?android:attr/actionBarSize"
+         android:layout_gravity="center_horizontal"
+         android:elevation="12dp"
+         app:popupTheme="@style/AppTheme.PopupOverlay"
+         app:titleTextAppearance="@style/ToolbarTitleStyle"
+         app:titleTextColor="@color/whitePrimary"
+         app:title="Kişileri Birleştir"
+         app:subtitle='@{String.valueOf(count.count)}'/>
+      
+      <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/toolbar">
+         
+         <LinearLayout
+            android:background="@color/light_background"
+            android:id="@+id/contactsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_16dp"
+            />
+      
+      </ScrollView>
+      
+      <ProgressBar
+         android:id="@+id/progress"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:indeterminate="true" />
+      
+      <include layout="@layout/empty_contact_view" />
+   
+   </RelativeLayout>
+</layout>

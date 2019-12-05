@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_new_backup_file"
+        android:icon="@drawable/new_backup_file_white"
+        android:title="@string/bacup_activity_new_backup_file"
+        app:showAsAction="ifRoom" />
+</menu>

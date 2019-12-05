@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto">
+   
+   <item
+      android:id="@+id/menu_search"
+      android:icon="@drawable/search"
+      android:title="@string/arama"
+      app:showAsAction="always" />
+   <item
+      android:id="@+id/filter_menu_item"
+      android:icon="@drawable/ic_sort"
+      android:title="@string/filtrele"
+      app:showAsAction="never" />
+   <item
+      android:id="@+id/menu_call_log_backup"
+      android:icon="@drawable/system"
+      android:title="@string/menu_backup_call_log"
+      app:showAsAction="never" />
+   <item
+      android:id="@+id/delete_all_calls"
+      android:title="@string/delete_all_history" />
+   <item
+      android:id="@+id/menu_delete_calls_db"
+      android:title="Veritabanını Sil"
+      app:showAsAction="never" />
+   <item
+      android:id="@+id/menu_random_calls"
+      android:title="Rastgele Kayıt Üret"
+      app:showAsAction="never" />
+
+</menu>

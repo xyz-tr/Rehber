@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".xyz.call.main.activity.search.CallLogSearchActivity"
+   android:background="@color/light_background">
+   
+   <com.tr.hsyn.telefonrehberi.util.ui.searchview.MaterialSearchView
+      android:id="@+id/sv"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:elevation="5dp"
+      android:translationZ="10dp"
+      android:layout_alignParentTop="true"/>
+   
+   <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/recyclerView"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      tools:listitem="@layout/call_item"
+      app:fastScrollAutoHide="false"
+      app:fastScrollEnableThumbInactiveColor="false"
+      app:fastScrollPopupTextColor="@color/white"
+      app:fastScrollThumbEnabled="true"
+      app:fastScrollTrackColor="@color/transparent"
+      android:layout_below="@id/sv"
+      app:fastScrollPopupBackgroundSize="50dp"
+      app:fastScrollPopupTextSize="16sp"/>
+   
+   <ProgressBar
+      android:layout_centerInParent="true"
+      android:id="@+id/progressBar"
+      style="?android:attr/progressBarStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:indeterminate="true"/>
+
+</RelativeLayout>

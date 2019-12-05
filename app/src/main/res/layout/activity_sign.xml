@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/root"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/light_background">
+   
+   <pl.droidsonroids.gif.GifImageView
+      android:id="@+id/image"
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/dimen_0dp"
+      android:background="@mipmap/google" />
+    
+    <TextView
+       android:id="@+id/sign_description"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/image"
+       android:layout_marginStart="@dimen/dimen_16dp"
+       android:layout_marginEnd="@dimen/dimen_16dp"
+       android:fontFamily="@font/acarisans_regular"
+       android:text="Giriş yaparak diğer uygulama kullanıcıları ile bağlantı kurabilir ve paylaşımda bulunabilirsin."
+       android:textSize="@dimen/dimen_16dp" />
+    
+   <Button
+      android:id="@+id/sign"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/sign_description"
+      android:layout_marginTop="8dp"
+      android:enabled="false"
+      android:text="Giriş Yap" />
+    
+    <TextView
+       android:id="@+id/notification_access_description"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/sign"
+       android:layout_marginStart="@dimen/dimen_16dp"
+       android:layout_marginTop="32dp"
+       android:layout_marginEnd="@dimen/dimen_16dp"
+       android:fontFamily="@font/acarisans_regular"
+       android:text="Uygulamanın seni engellenemez bir şekilde uyarabilmesi için Bildirim Erişimi İzni vermek zorundasın. Çünkü uygulama senin rehber ve arama kayıtları bilgilerini kullanmakta. Bilgilerin hassasiyeti açısından, yanlışlıkla yada kötü amaçlı kullanılmaması için uygulama seni her adımda uyaracak.  "
+       android:textSize="@dimen/dimen_16dp" />
+    
+   <Button
+      android:id="@+id/notificationService"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/notification_access_description"
+      android:layout_marginTop="8dp"
+      android:enabled="false"
+      android:text="Bildirim Servisi" />
+   
+   <TextView
+      android:id="@+id/output"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="16dp"
+      android:fontFamily="@font/call"
+      android:textColor="@android:color/holo_red_dark"
+      android:textSize="18sp"
+      tools:text="Giriş yap" />
+
+</RelativeLayout>

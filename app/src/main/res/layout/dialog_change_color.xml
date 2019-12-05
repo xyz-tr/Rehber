@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tr.hsyn.telefonrehberi.util.ui.RelativeLayoutx
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   app:maxHeightx="400dp"
+   android:padding="16dp">
+   
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:fontFamily="@font/rawen"
+      android:text="@string/renkler"
+      android:textSize="26sp"
+      android:textStyle="bold"
+      android:id="@+id/title"
+      android:layout_marginBottom="4dp" />
+   
+   <View
+      android:id="@+id/divider2"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="?android:attr/listDivider"
+      android:layout_below="@id/title"
+      android:padding="0dp"
+      android:layout_margin="0dp" />
+   
+   <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/divider2"
+      tools:listitem="@layout/color_item" />
+
+</com.tr.hsyn.telefonrehberi.util.ui.RelativeLayoutx>

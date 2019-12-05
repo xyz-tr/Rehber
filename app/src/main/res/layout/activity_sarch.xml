@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/light_background"
+   tools:context=".xyz.contact.activity.ContactSearchActivity">
+   
+   <LinearLayout
+      android:id="@+id/containerView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      
+      <com.tr.hsyn.telefonrehberi.util.ui.searchview.MaterialSearchView
+         android:id="@+id/sv"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:elevation="5dp"
+         android:visibility="visible" />
+      
+      <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+         android:id="@+id/recyclerViewSearch"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         app:fastScrollAutoHide="false"
+         app:fastScrollEnableThumbInactiveColor="false"
+         app:fastScrollPopupTextColor="@color/white"
+         app:fastScrollThumbEnabled="true"
+         app:fastScrollTrackColor="@color/transparent"
+         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+         tools:listitem="@layout/contact_with_number" />
+   </LinearLayout>
+   
+   <ProgressBar
+      android:id="@+id/progress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:indeterminate="true" />
+   
+   <include layout="@layout/empty_contact_view"
+      android:id="@+id/emptyView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:visibility="gone"/>
+
+</FrameLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".xyz.main.activity.BackgroundWorksActivity">
+   
+   <androidx.appcompat.widget.Toolbar
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      style="@style/ToolbarBase"
+      app:title="Arkaplan İşlemleri"
+      tools:subtitle="25"
+      app:navigationIcon="@drawable/left_arrow"
+      android:id="@+id/toolbar"
+      android:translationZ="@dimen/dimen_8dp"/>
+   
+   <androidx.recyclerview.widget.RecyclerView
+      android:paddingStart="@dimen/dimen_8dp"
+      android:paddingEnd="@dimen/dimen_8dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/toolbar"
+      android:id="@+id/recyclerView"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      tools:listitem="@layout/activity_background_works_work_item"/>
+   
+   <include layout="@layout/empty_work"/>
+   
+   
+</RelativeLayout>

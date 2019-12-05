@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.tr.hsyn.telefonrehberi.util.ui.RelativeLayoutx
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   app:maxHeightx="400dp"
+   android:paddingBottom="5dp"
+   xmlns:tools="http://schemas.android.com/tools">
+   
+   <RelativeLayout
+      android:elevation="5dp"
+      android:id="@+id/header"
+      android:layout_alignParentTop="true"
+      android:layout_width="match_parent"
+      android:layout_height="49dp"
+      tools:background="@color/almondColor">
+      
+      <TextView
+         android:textColor="@color/white"
+         android:id="@+id/titleText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:fontFamily="@font/nunito_extrabold"
+         tools:text="Falan Filan Olan Aramalar"
+         android:textSize="20sp" />
+   
+   </RelativeLayout>
+   
+   <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/header"
+      android:layout_centerHorizontal="true"
+      tools:listitem="@layout/dialog_call_list_item" 
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</com.tr.hsyn.telefonrehberi.util.ui.RelativeLayoutx>

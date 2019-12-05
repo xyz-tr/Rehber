@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:id="@+id/numbers_and_accounts_and_the_end"
+   android:background="@color/light_background"
+   android:orientation="vertical"
+   android:translationZ="1dp"
+   android:layout_marginBottom="6dp">
+   
+   <LinearLayout
+      android:id="@+id/numbers"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical" />
+   
+   <LinearLayout
+      android:id="@+id/accounts"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/light_background"
+      android:orientation="vertical" />
+   
+   <TextView
+      android:id="@+id/the_end"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginBottom="@dimen/contact_detail_vertical_margin"
+      android:text="@string/the_end"
+      android:textSize="20sp" />
+   
+   <include layout="@layout/ringtone_layout" />
+
+</LinearLayout>

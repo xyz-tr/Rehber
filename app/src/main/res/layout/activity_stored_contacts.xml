@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   tools:context=".xyz.contact.activity.stored.ContactsActivity"
+   android:background="@color/light_background">
+   
+   <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      style="@style/ToolbarBase"
+      android:elevation="6dp"
+      app:navigationIcon="@drawable/note"
+      app:subtitle="58"
+      app:title="Kayıtlı Kişiler" />
+   
+   <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/toolbar"
+      app:fastScrollAutoHide="false"
+      app:fastScrollEnableThumbInactiveColor="false"
+      app:fastScrollPopupTextColor="@color/white"
+      app:fastScrollThumbColor="@color/brickRedColor"
+      app:fastScrollThumbEnabled="true"
+      app:fastScrollTrackColor="@color/transparent"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      tools:listitem="@layout/contact_with_number"
+      android:id="@+id/recycler_view"/>
+   
+   <include layout="@layout/empty_contact_view"/>
+   
+   <ProgressBar
+      android:visibility="gone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:indeterminate="true"
+      android:layout_centerInParent="true"
+      android:id="@+id/progress"/>
+   
+
+</RelativeLayout>

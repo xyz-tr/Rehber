@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:background="@color/light_background"
+   android:orientation="vertical"
+   android:paddingTop="6dp"
+   android:paddingBottom="6dp"
+   android:paddingEnd="@dimen/dimen_16dp">
+   
+   <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="@drawable/ripple_accent"
+      android:clickable="true"
+      android:focusable="true"
+      android:orientation="horizontal">
+      
+      <Button
+         style="@style/CallDetailsText"
+         android:layout_width="@dimen/call_details_summary_first_item_width"
+         android:layout_height="match_parent"
+         android:background="@drawable/ripple_accent"
+         android:drawablePadding="6dp"
+         android:gravity="start|center_vertical"
+         android:textAllCaps="false" />
+      
+      <TextView
+         android:layout_width="@dimen/call_details_summary_hr_width"
+         android:layout_height="match_parent"
+         android:layout_marginEnd="@dimen/call_details_summary_hr_end_margin"
+         android:background="@color/call_details_summary_hr_color" />
+   
+      <TextView
+         style="@style/CallDetailsText"
+         android:layout_width="@dimen/call_details_summary_column_width"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:text="Arama"
+         android:textColor="@color/summary_second_color" />
+      
+      <TextView
+         android:layout_width="@dimen/call_details_summary_hr_width"
+         android:layout_height="match_parent"
+         android:layout_marginEnd="@dimen/call_details_summary_hr_end_margin"
+         android:background="@color/call_details_summary_hr_color" />
+   
+      <TextView
+         style="@style/CallDetailsText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="end"
+         android:text="Konuşma"
+         android:textAlignment="textEnd"
+         android:layout_marginEnd="@dimen/dimen_16dp"
+         android:textColor="@color/summary_second_color" />
+   
+   </LinearLayout>
+   
+   <LinearLayout
+      android:id="@+id/incommingCalls"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:paddingStart="16dp"
+      android:paddingEnd="6dp"
+      android:background="@drawable/ripple_accent"
+      android:clickable="true"
+      android:focusable="true"
+      android:orientation="horizontal"
+      android:layout_weight="1">
+      
+      <Button
+         android:id="@+id/incomming"
+         style="@style/CallDetailsText"
+         android:layout_width="@dimen/call_details_summary_first_item_width"
+         android:layout_height="match_parent"
+         android:background="@drawable/ripple_accent"
+         android:drawableStart="@drawable/incomming_call"
+         android:drawablePadding="6dp"
+         android:gravity="start|center_vertical"
+         android:text="@string/incomming"
+         android:textAllCaps="false" />
+      
+      <TextView
+         android:layout_width="@dimen/call_details_summary_hr_width"
+         android:layout_height="match_parent"
+         android:layout_marginEnd="@dimen/call_details_summary_hr_end_margin"
+         android:background="@color/call_details_summary_hr_color" />
+      
+      <TextView
+         android:id="@+id/incomming_call"
+         style="@style/CallDetailsTextSecondary"
+         android:layout_width="@dimen/call_details_summary_column_width"
+         android:layout_height="wrap_content"
+         android:gravity="start"
+         android:textAlignment="textStart"
+         android:text="@string/val" />
+      
+      <TextView
+         android:layout_width="@dimen/call_details_summary_hr_width"
+         android:layout_height="match_parent"
+         android:layout_marginEnd="@dimen/call_details_summary_hr_end_margin"
+         android:background="@color/call_details_summary_hr_color" />
+      
+      <TextView
+         android:id="@+id/incomming_call_duration"
+         style="@style/CallDetailsTextSecondary"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         tools:text="00:15:34" />
+   
+   </LinearLayout>
+   
+   <LinearLayout
+      android:id="@+id/outgoingPhoneRecords"
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:paddingStart="16dp"
+      android:paddingEnd="6dp"
+      android:background="@drawable/ripple_accent"
+      android:clickable="true"
+      android:focusable="true"
+      android:orientation="horizontal">
+      
+      <Button
+         android:id="@+id/outgoing"
+         style="@style/CallDetailsText"
+         android:layout_width="@dimen/call_details_summary_first_item_width"
+         android:layout_height="match_parent"
+         android:background="@drawable/ripple_accent"
+         android:drawableStart="@drawable/outgoing_call"
+         android:drawablePadding="6dp"
+         android:gravity="start|center_vertical"
+         android:text="@string/outgoing"
+         android:textAllCaps="false" />
+      
+      <TextView
+         android:layout_width="@dimen/call_details_summary_hr_width"
+         android:layout_height="match_parent"
+         android:layout_marginEnd="@dimen/call_details_summary_hr_end_margin"
+         android:background="@color/call_details_summary_hr_color" />
+      
+      <TextView
+         android:id="@+id/outgoing_call"
+         style="@style/CallDetailsTextSecondary"
+         android:layout_width="@dimen/call_details_summary_column_width"
+         android:layout_height="wrap_content"
+         android:gravity="start"
+         android:textAlignment="textStart"
+         android:text="@string/val" />
+      
+      <TextView
+         android:layout_width="@dimen/call_details_summary_hr_width"
+         android:layout_height="match_parent"
+         android:layout_marginEnd="@dimen/call_details_summary_hr_end_margin"
+         android:background="@color/call_details_summary_hr_color" />
+      
+      <TextView
+         android:id="@+id/outgoing_call_duration"
+         style="@style/CallDetailsTextSecondary"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         tools:text="00:15:34" />
+   
+   </LinearLayout>
+   
+   <LinearLayout
+      android:id="@+id/missedCalls"
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:paddingStart="16dp"
+      android:paddingEnd="6dp"
+      android:background="@drawable/ripple_accent"
+      android:clickable="true"
+      android:focusable="true"
+      android:orientation="horizontal">
+      
+      <Button
+         android:id="@+id/missed"
+         style="@style/CallDetailsText"
+         android:layout_width="@dimen/call_details_summary_first_item_width"
+         android:layout_height="match_parent"
+         android:background="@drawable/ripple_accent"
+         android:drawableStart="@drawable/missed_call"
+         android:drawablePadding="6dp"
+         android:gravity="start|center_vertical"
+         android:text="@string/missed"
+         android:textAllCaps="false" />
+      
+      <TextView
+         android:layout_width="@dimen/call_details_summary_hr_width"
+         android:layout_height="match_parent"
+         android:layout_marginEnd="@dimen/call_details_summary_hr_end_margin"
+         android:background="@color/call_details_summary_hr_color" />
+      
+      <TextView
+         android:id="@+id/missed_call"
+         style="@style/CallDetailsTextSecondary"
+         android:layout_width="@dimen/call_details_summary_column_width"
+         android:layout_height="wrap_content"
+         android:gravity="start"
+         android:textAlignment="textStart"
+         android:text="@string/val" />
+      
+      <TextView
+         android:layout_width="@dimen/call_details_summary_hr_width"
+         android:layout_height="match_parent"
+         android:layout_marginEnd="@dimen/call_details_summary_hr_end_margin"
+         android:background="@color/call_details_summary_hr_color" />
+   
+   </LinearLayout>
+   
+   <LinearLayout
+      android:id="@+id/rejectedPhoneRecords"
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:paddingStart="16dp"
+      android:paddingEnd="6dp"
+      android:background="@drawable/ripple_accent"
+      android:clickable="true"
+      android:focusable="true"
+      android:orientation="horizontal">
+      
+      <Button
+         android:id="@+id/rejected"
+         style="@style/CallDetailsText"
+         android:layout_width="@dimen/call_details_summary_first_item_width"
+         android:layout_height="match_parent"
+         android:background="@drawable/ripple_accent"
+         android:drawableStart="@drawable/rejected_call"
+         android:drawablePadding="6dp"
+         android:gravity="start|center_vertical"
+         android:text="@string/rejected"
+         android:textAllCaps="false" />
+      
+      <TextView
+         android:layout_width="@dimen/call_details_summary_hr_width"
+         android:layout_height="match_parent"
+         android:layout_marginEnd="@dimen/call_details_summary_hr_end_margin"
+         android:background="@color/call_details_summary_hr_color" />
+      
+      <TextView
+         android:id="@+id/rejected_call"
+         style="@style/CallDetailsTextSecondary"
+         android:layout_width="@dimen/call_details_summary_column_width"
+         android:layout_height="wrap_content"
+         android:gravity="start"
+         android:textAlignment="textStart"
+         android:text="@string/val" />
+      
+      <TextView
+         android:layout_width="@dimen/call_details_summary_hr_width"
+         android:layout_height="match_parent"
+         android:layout_marginEnd="@dimen/call_details_summary_hr_end_margin"
+         android:background="@color/call_details_summary_hr_color" />
+   
+   </LinearLayout>
+   
+   <LinearLayout
+      android:id="@+id/blockedCalls"
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:paddingStart="16dp"
+      android:paddingEnd="6dp"
+      android:background="@drawable/ripple_accent"
+      android:clickable="true"
+      android:focusable="true"
+      android:orientation="horizontal">
+      
+      <Button
+         android:id="@+id/blocked"
+         style="@style/CallDetailsText"
+         android:layout_width="@dimen/call_details_summary_first_item_width"
+         android:layout_height="match_parent"
+         android:background="@drawable/ripple_accent"
+         android:drawableStart="@drawable/blocked_call"
+         android:drawablePadding="7dp"
+         android:gravity="start|center_vertical"
+         android:text="@string/blocked"
+         android:textAllCaps="false" />
+      
+      <TextView
+         android:layout_width="@dimen/call_details_summary_hr_width"
+         android:layout_height="match_parent"
+         android:layout_marginEnd="@dimen/call_details_summary_hr_end_margin"
+         android:background="@color/call_details_summary_hr_color" />
+      
+      <TextView
+         android:id="@+id/blocked_call"
+         style="@style/CallDetailsTextSecondary"
+         android:layout_width="@dimen/call_details_summary_column_width"
+         android:layout_height="wrap_content"
+         android:gravity="start"
+         android:textAlignment="textStart"
+         android:text="@string/val" />
+      
+      <TextView
+         android:layout_width="@dimen/call_details_summary_hr_width"
+         android:layout_height="match_parent"
+         android:layout_marginEnd="@dimen/call_details_summary_hr_end_margin"
+         android:background="@color/call_details_summary_hr_color" />
+   
+   </LinearLayout>
+   
+   <TextView
+      
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="8dp"
+      android:background="@color/call_details_summary_hr_color" />
+   
+   <LinearLayout
+      android:id="@+id/allPhoneRecords"
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:paddingStart="16dp"
+      android:paddingEnd="6dp"
+      android:background="@drawable/ripple_accent"
+      android:clickable="true"
+      android:focusable="true"
+      android:orientation="horizontal">
+      
+      <Button
+         android:id="@+id/total"
+         style="@style/CallDetailsText"
+         android:layout_width="@dimen/call_details_summary_first_item_width"
+         android:layout_height="match_parent"
+         android:background="@drawable/ripple_accent"
+         android:gravity="start|center_vertical"
+         android:paddingStart="30dp"
+         android:text="@string/total"
+         android:textAllCaps="false" />
+      
+      <TextView
+         android:id="@+id/total_call"
+         style="@style/CallDetailsTextSecondary"
+         android:layout_width="@dimen/call_details_summary_column_width"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="17dp"
+         android:gravity="start"
+         android:textAlignment="textStart"
+         android:text="@string/val" />
+      
+      <TextView
+         android:id="@+id/total_call_duration"
+         style="@style/CallDetailsTextSecondary"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         tools:text="05:15:34"
+         android:layout_marginStart="@dimen/dimen_16dp"/>
+   
+   </LinearLayout>
+
+</LinearLayout>

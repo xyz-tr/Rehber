@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_centerInParent="true"
+   android:visibility="gone"
+   tools:visibility="visible"
+   android:id="@+id/empty_view">
+
+   <ImageView
+      android:id="@+id/icon"
+      android:layout_width="250dp"
+      android:layout_height="250dp"
+      android:src="@drawable/work"
+      android:alpha="0.1"/>
+   
+   <TextView
+      android:text="Görev Yok"
+      android:layout_below="@id/icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:ignore="HardcodedText" 
+      android:textSize="30dp"
+      android:maxEms="16"
+      android:alpha="0.2"
+      android:layout_marginTop="8dp"
+      android:layout_centerHorizontal="true"/>
+   
+</RelativeLayout>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+   <array name="progress_colors">
+      
+      <item>@color/c_bondi_blue</item>
+      <item>@color/c_dark_coral</item>
+      <item>@color/c_bright_lavender</item>
+      <item>@color/c_forest_green</item>
+      <item>@color/c_carrot_orange</item>
+      <item>@color/c_cyber_grape</item>
+      <item>@color/c_cg_red</item>
+   </array>
+   
+   <string name="app_name">Rehber</string>
+   <string name="call_log">Arama Kayıtları</string>
+   <string name="action_settings">Ayarlar</string>
+   <string name="delete_all_history">Tüm Geçmişi Sil</string>
+   
+   <string name="msv_no_filter">Filtre Yok</string>
+   <string name="msv_search_hint">Ara&#8230;</string>
+   <string name="menu_settings">Ayarlar</string>
+   
+   <string name="messages_opening">Mesajlar açılıyor…\n%s</string>
+   <string name="calling">%s Aranıyor…</string>
+   
+   <string name="menu_select_account">Hesap Seç</string>
+   
+   <string name="the_end">\u0DF4</string>
+   <string name="last_contacts">Görüşme Geçmişi</string>
+   
+   <string name="toast_no_contact">Kişi kayıtlı değil</string>
+   <string name="toast_no_contact_id">Gerekli id yok</string>
+   
+   <string name="type_mobile">Cep</string>
+   <string name="type_home">Ev</string>
+   <string name="type_work">İş</string>
+   <string name="type_other">Diğer</string>
+   
+   <string name="no_call_history">Arama Kaydı Yok</string>
+   
+   <string name="call_duration">(%s sn)</string>
+   
+   <string name="edit_contact_menu_item">Düzenle</string>
+   <string name="contact_deleted">%s silindi</string>
+   
+   <!-- Callog Calls -->
+   <string name="val">%3d</string>
+   <string name="incomming">Gelen</string>
+   <string name="outgoing">Giden</string>
+   <string name="missed">Cevapsız</string>
+   <string name="rejected">Reddedilen</string>
+   <string name="blocked">Engellenen</string>
+   <string name="total">Toplam</string>
+   
+   <string name="incomming_call">Gelen Arama</string>
+   <string name="outgoing_call">Giden arama</string>
+   <string name="missed_call">Cevapsız Arama</string>
+   <string name="rejected_call">Reddedilen Arama</string>
+   <string name="blocked_call">Engellenen Arama</string>
+   
+   <string name="incomming_call_details">gelen arama</string>
+   <string name="outgoing_call_details">giden arama</string>
+   <string name="missed_call_details">cevapsız arama</string>
+   <string name="rejected_call_details">reddedilen arama</string>
+   <string name="blocked_call_details">engellenen arama</string>
+   
+   <string name="incomming_message">Gelen Mesaj</string>
+   <string name="outgoing_message">Giden Mesaj</string>
+   
+   <!--𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘-->
+   <!--𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘-->
+   <!--𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘ARAMA FİLTRELEME𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘-->
+   
+   <string name="all_calls">Tüm Aramalar</string>
+   <string name="incomming_calls">Gelen Aramalar</string>
+   <string name="outgoing_calls">Giden Aramalar</string>
+   <string name="missed_calls">Cevapsız Aramalar</string>
+   <string name="rejected_calls">Reddedilen Aramalar</string>
+   <string name="deleted_calls">Silinen Aramalar</string>
+   <string name="blocked_calls">Engellenen Aramalar</string>
+   <string name="most_outgoing_calls">En Çok Arananlar</string>
+   <string name="most_incomming_calls">En Çok Arayanlar</string>
+   <string name="most_missed_calls">En Çok Çağrı Atanlar</string>
+   <string name="most_rejected_calls">En Çok Reddedilenler</string>
+   <string name="most_speaking">En Uzun Konuşanlar</string>
+   <string name="most_talking">En Uzun Konuştukların</string>
+   <string name="most_duration_incomming_calls">En Çok Konuşanlar</string>
+   <string name="most_duration_outgoing_calls">En Çok Konuştukların</string>
+   <string name="most_small_missed_calls">En Kısa Çağrı Atanlar</string>
+   <string name="most_long_missed_calls">En Uzun Çağrı Atanlar</string>
+   <string name="most_quick_answer">En Çabuk Cevap Verdiklerin</string>
+   <string name="most_late_answer">En Geç Cevap Verdiklerin</string>
+   <string name="most_late_make_answer">En Geç Cevap Verenler</string>
+   <string name="most_quick_make_answer">En Çabuk Cevap Verenler</string>
+   <string name="quickest_rejected_call">En Hızlı Reddedilenler</string>
+   <string name="longest_rejected_call">En Geç Reddedilenler</string>
+   
+   <!--𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘-->
+   <!--𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘𐩘-->
+   
+   <string-array name="call_filter_items">
+      <item>@string/all_calls</item>
+      <item>@string/incomming_calls</item>
+      <item>@string/outgoing_calls</item>
+      <item>@string/missed_calls</item>
+      <item>@string/rejected_calls</item>
+      <item>@string/blocked_calls</item>
+      <item>@string/deleted_calls</item>
+      <item>@string/most_outgoing_calls</item>
+      <item>@string/most_incomming_calls</item>
+      <item>@string/most_missed_calls</item>
+      <item>@string/most_rejected_calls</item>
+      <item>@string/most_speaking</item>
+      <item>@string/most_talking</item>
+      <item>@string/most_duration_incomming_calls</item>
+      <item>@string/most_duration_outgoing_calls</item>
+      <item>@string/most_small_missed_calls</item>
+      <item>@string/most_long_missed_calls</item>
+      <item>@string/most_quick_answer</item>
+      <item>@string/most_late_answer</item>
+      <item>@string/most_late_make_answer</item>
+      <item>@string/most_quick_make_answer</item>
+      <item>@string/quickest_rejected_call</item>
+      <item>@string/longest_rejected_call</item>
+   
+   </string-array>
+   <!-- Callog Calls End -->
+   
+   <string name="filters">Filtreler</string>
+   
+   <string name="msg_simcard_not_ready">Simkart hazır değil</string>
+   <string name="msg_airplane_mode_on">Uçuş modu açık</string>
+   
+   <string name="show_calls_activity_menu_delete_all">Hepsini Sil</string>
+   <string name="msg_call_deleted">%s silindi</string>
+   <string name="msg_call_not_deleted">%s silinemedi</string>
+   
+   <string name="colors">Renkler</string>
+   <string name="change_color_default">Varsayılan</string>
+   <string name="change_color_purple">Mor</string>
+   <string name="change_color_blue">Açık Gökyüzü</string>
+   <string name="change_color_orange">Portakal</string>
+   <string name="change_color_green">Çimen</string>
+   <string name="change_color_brown">Toprak</string>
+   <string name="change_color_grey">Gri</string>
+   <string name="change_color_teal">Turkuaz</string>
+   <string name="change_color_pink">Pembe</string>
+   <string name="change_color_lime">Limon</string>
+   <string name="change_color_amber">Kehribar</string>
+   <string name="change_color_light_green">Elma</string>
+   <string name="change_color_çikolata">Çikolata</string>
+   <string name="change_color_sky">Koyu Gökyüzü</string>
+   <string name="change_color_night">Gece</string>
+   <string name="change_color_chesnut">Kestane</string>
+   <string name="change_color_orkide">Orkide</string>
+   <string name="change_color_yonca">Yonca</string>
+   <string name="change_color_alev">Alev</string>
+   <string name="change_color_havuc">Havuç</string>
+   
+   <string-array name="colors">
+      <item>@string/change_color_default</item>
+      <item>@string/change_color_purple</item>
+      <item>@string/change_color_blue</item>
+      <item>@string/change_color_orange</item>
+      <item>@string/change_color_green</item>
+      <item>@string/change_color_brown</item>
+      <item>@string/change_color_grey</item>
+      <item>@string/change_color_teal</item>
+      <item>@string/change_color_pink</item>
+      <item>@string/change_color_lime</item>
+      <item>@string/change_color_amber</item>
+      <item>@string/change_color_light_green</item>
+      <item>@string/change_color_çikolata</item>
+      <item>@string/change_color_sky</item>
+      <item>@string/change_color_night</item>
+      <item>@string/change_color_chesnut</item>
+      <item>@string/change_color_orkide</item>
+      <item>@string/change_color_yonca</item>
+      <item>@string/change_color_alev</item>
+      <item>@string/change_color_havuc</item>
+   </string-array>
+   
+   <string name="msg_saved">%s kaydedildi</string>
+   <string name="menu_backup_call_log">Kayıtları Yedekle</string>
+   
+   <string name="header_backup_activity">Arama Kayıtlarını Yedekle</string>
+   <string name="msg_backup_activity_folder_already_exist_with_a_filename">Yedek klasörü <u>oluşturulamadı</u>. Yedek klasörü için kullanılan isimle aynı olan bir dosya mevcut</string>
+   <string name="arama">Arama</string>
+   <string name="filtrele">Filtrele</string>
+   <string name="backups">Yedekler</string>
+   
+   <string name="bacup_activity_new_backup_file">Yeni Oluştur</string>
+   <string name="hiç_yedek_yok">Hiç Yedek Yok</string>
+   <string name="yeni_oluştur">Yeni Oluştur</string>
+   <string name="yedek_oluşturuluyor">Yedek Oluşturuluyor</string>
+   <string name="msg_new_backup_created">Yeni yedek oluşturuldu : %s</string>
+   
+   <string name="backup_reload">Geri Yükle</string>
+   <string name="backup_show">Göster</string>
+   <string name="backup_delete">Sil</string>
+   <string name="no_call">Çağrı Yok</string>
+   <string name="gerekli_bilgiler_sağlanmadı">Gerekli bilgiler sağlanmadı</string>
+   <string name="arama_kayıtları_alınamadı">Arama kayıtları alınamadı</string>
+   <string name="dosya_alınamadı">Dosya alınamadı</string>
+   <string name="dosya_okunamadi">Dosya okunamadı</string>
+   <string name="dosya_silinemedi">Dosya silinemedi</string>
+   <string name="dosya_oluşturulamadı">Dosya oluşturulamadı</string>
+   <string name="kayıtlar_düzenleniyor">Kayıtlar yeniden düzenleniyor</string>
+   
+   <string name="fb_app_id">340474523371502</string>
+   <string name="fb_login_protocol_scheme">fb340474523371502</string>
+   <string name="msg_cursor_error">Veri tabanınına erişilemedi</string>
+   <string name="all_contacts">Tüm Kişiler</string>
+   <string name="show_contact_history">Görüşme geçmişini göster</string>
+   <string name="call_log_calls">%d %s Çağrı</string>
+   <string name="call_details_calls">%d %sÇağrı</string>
+   <string name="accounts">Hesaplar</string>
+   <string name="refresh_contacts">Kişileri Yenile</string>
+   <string name="no_history">Görüşme geçmişi yok</string>
+   
+   <!-- account types -->
+   <string name="account_type_twitter">com.twitter.android.auth.login</string>
+   <string name="account_type_whatsapp">com.whatsapp</string>
+   <string name="account_type_google">com.google</string>
+   <string name="account_type_messenger">com.facebook.messenger</string>
+   <string name="account_type_sim">com.android.sim</string>
+   
+   <!-- account names -->
+   <string name="account_name_whatsapp">WhatsApp</string>
+   <string name="account_name_messenger">Messenger</string>
+   <string name="account_name_sim_1">SIM1</string>
+   <string name="account_name_sim_2">SIM2</string>
+   <string name="mesaj">Mesaj</string>
+   <string name="sesli_arama">Sesli Arama</string>
+   <string name="goruntulu_arama">Görüntülü Arama</string>
+   
+   <!-- Contacts Groups -->
+   
+   <string name="contact_group_my_contacts">Kişilerim</string>
+   <string name="contact_group_friends">Arkadaşlarım</string>
+   <string name="contact_group_family">Ailem</string>
+   <string name="contact_group_coworkers">İş Arkadaşlarım</string>
+   <string name="contact_group_started">Favoriler</string>
+   <string name="groups">Gruplar</string>
+   
+   <string name="remove_user">%s \'%s\' grubundan çıkarılsın mı? </string>
+   <string name="remove_from_group">Kişiyi gruptan çıkar?</string>
+   <string name="cancel">İptal</string>
+   <string name="remove">Çıkar</string>
+   <string name="add">Ekle</string>
+   <string name="add_user">Seçilen kişiler \'%s\' grubuna eklensin mi?</string>
+   <string name="msg_removed_from_group">%s gruptan çıkarıldı</string>
+   <string name="group_alert">Bu grup, hesaba kayıtlı kişilerin otomatik olarak eklendiği bir gruptur. Bu grupta değişiklik yapılamaz</string>
+   <string name="understand">Anladım</string>
+   <string name="no_number">Kişinin numarası yok</string>
+   <string name="no_information">Gerekli bilgiler alınamadı</string>
+   <string name="no_name">(İsimsiz)</string>
+   <string name="msg_group_visable">Grup rehberde görünür oldu : \'%s\'</string>
+   <string name="msg_group_invisable">Grup gizlendi : \'%s\'</string>
+   <string name="delete">Sil</string>
+   <string name="deleted">%s silindi</string>
+   <string name="not_deleted">%s silinemedi</string>
+   <string name="is_delete">%s silinsin mi?</string>
+   
+   <string name="group_added">%s eklendi</string>
+   <string name="group_not_added">%s eklenemedi</string>
+   <string name="okey">Tamam</string>
+   <string name="new_group_name">Yeni Grup İsmi</string>
+   <string name="renkler">Renkler</string>
+   <string name="no_member">Grupta kimse yok</string>
+   <string name="hide">Gizle</string>
+   <string name="show">Göster</string>
+   <string name="create_new_group">Yeni Grup Oluştur</string>
+   <string name="yaz">yaz…</string>
+   <string name="send_message">Mesaj Gönder</string>
+   <string name="rename">Yeniden Adlandır</string>
+   
+   <string name="assign_ringtone">Zil Sesi Ata (%s)</string>
+   <string name="select_ringtone">Zil sesi seç</string>
+   
+   <string name="ringtone_set">Grup zil sesi ayarlandı : %s</string>
+   <string name="ringing_duration">%.2fsn</string>
+   <string name="speaking_duration">%.2fsn</string>
+   <string name="off_the_record">Kayıt dışı</string>
+   <string name="speaking_duration_str">Konuşma süresi</string>
+   <string name="ringing_duration_str">Çalma süresi</string>
+   <string name="total_duration_str">Toplam süre</string>
+   <string name="unknown_call_ringing_duration">Aramanın kaydı uygulama tarafından kaydedilmediği için telefonun çalma süresi bilinmiyor.</string>
+   <string name="not_enough_info">Yeterli bilgi toplanmadığı için bir karşılaştırma yapılamıyor.</string>
+   
+   <!--****************************************-->
+   
+   <string name="stringValue1">Kaç Tane</string>
+   <string name="stringValue2">System kayıtlarına eklensin</string>
+   <string name="stringValue3">System kayıtları sınırlı sayıda kayıt tuttuğu için üretilen son kayıtlar sisteme eklenir.</string>
+   <string name="stringValue4">&amp;</string>
+   <string name="stringValue5">Paylaşılabilir olarak ayarla (hata ayıklama için)</string>
+   <string name="stringValue6">Üret</string>
+   
+   <string name="contacts_merge_mark_all">Tümünü İşaretle</string>
+   <string name="contacts_merge_unmark_all">Tüm İşaretleri Kaldır</string>
+   <string name="contacts_merge_merge">İşaretlileri Birleştir</string>
+   <string name="contacts_merge_remove">İşaretlileri Yoksay</string>
+   <string name="contacts_merge_merge_marked">Birleştir</string>
+   <string name="contacts_merge_mark_unmark_all">İşaretle</string>
+   
+   <!-- TODO: Remove or change this placeholder text -->
+   <string name="hello_blank_fragment">Hello blank fragment</string>
+   <string name="title_activity_ptt">PttActivity</string>
+   <string name="tab_text_1">Tab 1</string>
+   <string name="tab_text_2">Tab 2</string>
+</resources>

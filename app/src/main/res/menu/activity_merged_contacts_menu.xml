@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:android="http://schemas.android.com/apk/res/android">
+   
+   <item
+      android:id="@+id/contacts_merge_merge_marked"
+      android:icon="@drawable/ring_separate"
+      android:title="Ayır"
+      app:showAsAction="always" />
+   <item
+      android:id="@+id/contacts_merge_mark_unmark_all"
+      android:icon="@drawable/checkbox"
+      android:title="@string/contacts_merge_mark_unmark_all"
+      app:showAsAction="always" />
+   <item
+      android:id="@+id/contacts_merge_mark_all"
+      android:title="@string/contacts_merge_mark_all" />
+   <item
+      android:id="@+id/contacts_merge_unmark_all"
+      android:title="@string/contacts_merge_unmark_all" />
+   <item
+      android:id="@+id/contacts_merge_separate"
+      android:title="İşaretlileri Ayır" />
+   <item
+      android:id="@+id/merge_contacts_refresh"
+      android:title="Yenile"
+      app:showAsAction="never" />
+</menu>

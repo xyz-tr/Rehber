@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+       android:id="@+id/menu_search"
+       android:icon="@drawable/search"
+       android:title="@string/msv_search_hint"
+       app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_accounts"
+        android:icon="@drawable/account"
+        android:title="@string/accounts"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_refresh_contacts"
+        android:title="@string/refresh_contacts"
+        app:showAsAction="never" />
+    
+    <item
+       android:id="@+id/menu_stored_contacts"
+       android:title="Kayıtlı Kişiler"
+       app:showAsAction="never" />
+    <item
+       android:id="@+id/contacts_menu_merge"
+       android:title="Kişileri Birleştir"
+       app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_groups"
+        android:title="@string/groups"
+        app:showAsAction="never" />
+    
+    <item
+       android:title="@string/menu_settings"
+       app:showAsAction="never"
+       android:id="@+id/menu_settings"/>
+</menu>

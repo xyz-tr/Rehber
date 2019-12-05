@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   
+   <item
+      android:id="@+id/call_details_delete"
+      android:icon="@drawable/delete_white"
+      android:title="@string/backup_delete"
+      app:showAsAction="always" />
+   <item
+      android:id="@+id/reminder"
+      android:icon="@drawable/note"
+      android:title="Hatırlatıcı"
+      app:showAsAction="ifRoom" />
+   <item
+      android:id="@+id/menu_notifications"
+      android:title="Bildirimler"
+      app:showAsAction="never" />
+</menu>

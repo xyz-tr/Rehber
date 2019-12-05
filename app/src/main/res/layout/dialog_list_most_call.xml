@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.tr.hsyn.telefonrehberi.util.ui.RelativeLayoutx
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   app:maxHeightx="400dp">
+   
+   <ProgressBar
+      android:id="@+id/progress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true" />
+   
+   <RelativeLayout
+      android:id="@+id/header"
+      android:layout_width="match_parent"
+      android:layout_height="46dp"
+      android:background="@color/amber_400"
+      android:elevation="5dp">
+      
+      <TextView
+         android:id="@+id/titleText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:fontFamily="@font/nunito_extrabold"
+         android:text="En Çok Arananlar"
+         android:textColor="@color/white"
+         android:textSize="20sp" />
+   </RelativeLayout>
+   
+   <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/header"
+      android:layout_marginTop="0dp" />
+
+</com.tr.hsyn.telefonrehberi.util.ui.RelativeLayoutx>
+
+
+
+
+

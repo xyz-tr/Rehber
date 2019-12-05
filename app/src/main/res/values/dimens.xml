@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+   <dimen name="background_works_activity_dialog_mono_text_size">12dp</dimen>
+   <dimen name="background_works_activity_dialog_text_size">13dp</dimen>
+   
+   <dimen name="sb__bg_corner_radius">0dp</dimen>
+   <dimen name="sb__offset">0dp</dimen>
+   <dimen name="sb__text_padding_bottom">14dp</dimen>
+   <dimen name="sb__text_padding_left">24dp</dimen>
+   <dimen name="sb__text_padding_top">14dp</dimen>
+   <dimen name="sb__text_padding_right">24dp</dimen>
+   <dimen name="sb__text_size">14sp</dimen>
+   <dimen name="sb__min_width">288dp</dimen>
+   <dimen name="sb__max_width">568dp</dimen>
+   
+   
+   
+   <dimen name="dimen_0dp">0dp</dimen>
+   <dimen name="dimen_10dp">10dp</dimen>
+   <dimen name="dimen_8dp">8dp</dimen>
+   <dimen name="dimen_16dp">16dp</dimen>
+   <dimen name="dimen_30dp">30dp</dimen>
+   
+   <dimen name="activity_horizontal_margin">16dp</dimen>
+   <dimen name="activity_vertical_margin">16dp</dimen>
+   
+   <dimen name="snack_bar_height">48dp</dimen>
+   <dimen name="snack_bar_max_height">380dp</dimen>
+   <dimen name="snack_bar_text_size">14sp</dimen>
+   <dimen name="snack_bar_left_right_padding">8dp</dimen>
+   <dimen name="snack_bar_top_padding">16dp</dimen>
+   <dimen name="snack_bar_bottom_padding">12dp</dimen>
+   <dimen name="snack_bar_animation_position">0dp</dimen>
+   <dimen name="snack_bar_action_text_size">14sp</dimen>
+   
+   <dimen name="msv_horizontal_margin">8dip</dimen>
+   
+   <dimen name="msv_icon_padding">12dp</dimen>
+   <dimen name="msv_text_padding">65dp</dimen>
+   
+   <dimen name="msv_suggestions_left_margin">48dp</dimen>
+   
+   <dimen name="msv_filter_height">32dip</dimen>
+   <dimen name="msv_filter_margin">2dip</dimen>
+   <dimen name="msv_filter_rv_padding">2dip</dimen>
+   <dimen name="msv_filter_rv_height">40dip</dimen>
+   <dimen name="msv_filter_close_button_horizontal_margin">4dip</dimen>
+   
+   <dimen name="msv_select_filter_left_margin">16dp</dimen>
+   <dimen name="msv_select_filter_icon_padding">12dip</dimen>
+   <dimen name="msv_select_filter_text_left_margin">72dip</dimen>
+   <dimen name="msv_select_filter_icon_size">36dip</dimen>
+   <dimen name="msv_select_filter_section_height">48dip</dimen>
+   <dimen name="msv_select_filter_my_filter_height">48dip</dimen>
+   <dimen name="nav_header_vertical_spacing">8dp</dimen>
+   <dimen name="nav_header_height">176dp</dimen>
+   <dimen name="fab_margin">16dp</dimen>
+   <dimen name="appbar_padding_top">8dp</dimen>
+   
+   <dimen name="contact_item_layout_height">55dp</dimen>
+   <dimen name="contact_item_image_width">44dp</dimen>
+   <dimen name="contact_item_text_left_margin">16dp</dimen>
+   <dimen name="contact_item_text_size">16sp</dimen>
+   <dimen name="contact_item_image_left_margin">64dp</dimen>
+   <dimen name="contact_item_card_corner_radius">22dp</dimen>
+   <dimen name="contact_item_card_elevation">3dp</dimen>
+   <dimen name="contact_item_card_content_padding">0dp</dimen>
+   <dimen name="contact_item_card_margin_start">58dp</dimen>
+   
+   <dimen name="floating_button_bottom_margin">16dp</dimen>
+   <dimen name="floating_button_end_margin">16dp</dimen>
+   <dimen name="tab_indicator_height">1.5dp</dimen>
+   
+   <dimen name="call_details_summary_hr_end_margin">16dp</dimen>
+   <dimen name="call_details_summary_hr_width">1dp</dimen>
+   <dimen name="call_details_summary_first_item_width">120dp</dimen>
+   <dimen name="call_details_summary_column_width">60dp</dimen>
+   <dimen name="call_details_summary_margin_start">16dp</dimen>
+   <dimen name="call_details_summary_margin_end">32dp</dimen>
+   <dimen name="call_item_wxh">50dp</dimen>
+   <dimen name="call_item_corner_radius">25dp</dimen>
+   <dimen name="call_item_notification_view_height">10dp</dimen>
+   
+   <dimen name="backup_text_vertical_padding">9dp</dimen>
+   <dimen name="backup_text_size">26sp</dimen>
+   
+   <dimen name="header_view_start_margin_left">16dp</dimen>
+   <dimen name="header_view_end_margin_left">40dp</dimen>
+   <dimen name="header_view_end_margin_right">14dp</dimen>
+   <dimen name="header_view_start_margin_bottom">14dp</dimen>
+   <dimen name="header_view_start_text_size">32sp</dimen>
+   <dimen name="header_view_end_text_size">18sp</dimen>
+   
+   <dimen name="contact_detail_horizontal_margin">6dp</dimen>
+   <dimen name="contact_detail_vertical_margin">5dp</dimen>
+   <dimen name="contact_detail_popup_item_vertical_padding">10dp</dimen>
+   <dimen name="contact_detail_popup_item_padding_start">32dp</dimen>
+   <dimen name="contact_detail_popup_item_text_size">18sp</dimen>
+   
+   <dimen name="contact_merge_item_icon_size">26sp</dimen>
+   <dimen name="appbar_padding">16dp</dimen>
+   <dimen name="default_padding">8dp</dimen>
+
+</resources>

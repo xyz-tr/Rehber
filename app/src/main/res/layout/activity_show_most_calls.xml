@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    android:orientation="vertical"
+    tools:context=".xyz.call.main.activity.most.ShowMostCallsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarBase"
+        android:layout_alignParentTop="true"
+        android:translationZ="5dp"
+        app:navigationIcon="@drawable/left_arrow"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Aramalar" />
+    
+    <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+       android:layout_below="@id/toolbar"
+       android:id="@+id/recyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:fastScrollAutoHide="false"
+       app:fastScrollEnableThumbInactiveColor="false"
+       app:fastScrollPopupBackgroundSize="50dp"
+       app:fastScrollPopupTextSize="16sp"
+       app:fastScrollPopupPosition="center"
+       app:fastScrollPopupTextColor="@color/white"
+       app:fastScrollThumbEnabled="true"
+       app:fastScrollTrackColor="@color/transparent"
+       tools:listitem="@layout/call_details_item"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    
+    <include
+       android:id="@+id/emptyView"
+       layout="@layout/empty_view"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:visibility="gone" 
+       android:layout_centerInParent="true"/>
+
+</RelativeLayout>

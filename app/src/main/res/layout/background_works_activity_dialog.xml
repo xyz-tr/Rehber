@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   tools:ignore="SpUsage, HardcodedText"
+   android:padding="0dp"
+   android:background="@color/c_black"
+   android:layout_margin="0dp"
+   android:orientation="vertical">
+   
+   <ImageView
+      android:id="@+id/background"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:adjustViewBounds="true"
+      android:scaleType="centerCrop"
+      android:src="@drawable/texture_background_works_dialog" />
+   
+   <LinearLayout
+      android:layout_marginEnd="@dimen/dimen_16dp"
+      android:layout_marginStart="@dimen/dimen_16dp"
+      android:id="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dimen_16dp"
+      android:layout_marginBottom="@dimen/dimen_16dp"
+      android:orientation="vertical">
+      
+      <TextView
+         android:textColor="@color/background_works_activity_dialog_mono_text_color"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:fontFamily="@font/now_black"
+         android:text="Görev"
+         android:textSize="28sp" />
+      
+      <TextView
+         android:textColor="@color/background_works_activity_dialog_mono_text_color"
+         android:id="@+id/reason"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:gravity="center"
+         android:text="Rehber kayıtları alma"
+         android:textSize="16dp" />
+   
+   </LinearLayout>
+   
+   <LinearLayout
+      android:paddingStart="@dimen/dimen_16dp"
+      android:paddingEnd="@dimen/dimen_16dp"
+      android:id="@+id/titles"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/title"
+      android:orientation="vertical"
+      android:layout_centerVertical="true">
+      
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         
+         <TextView
+            
+            style="@style/BackgroundWorksActivityDialogContentMono"
+            android:text="Başlatan        : "
+            android:textColor="@color/background_works_activity_dialog_mono_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_mono_text_size" />
+         
+         <TextView
+            android:id="@+id/starter"
+            style="@style/BackgroundWorksActivityDialogContent"
+            android:text="ContactsFragmentActivity"
+            android:textColor="@color/background_works_activity_dialog_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_text_size" />
+      
+      </LinearLayout>
+      
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         
+         <TextView
+            style="@style/BackgroundWorksActivityDialogContentMono"
+            android:text="Başlatma zamanı : "
+            android:textColor="@color/background_works_activity_dialog_mono_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_mono_text_size" />
+         
+         <TextView
+            android:id="@+id/start_time"
+            style="@style/BackgroundWorksActivityDialogContent"
+            android:text="19.13.2019 13:22:41"
+            android:textColor="@color/background_works_activity_dialog_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_text_size" />
+      
+      </LinearLayout>
+      
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         
+         <TextView
+            style="@style/BackgroundWorksActivityDialogContentMono"
+            android:text="Bitiş zamanı    : "
+            android:textColor="@color/background_works_activity_dialog_mono_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_mono_text_size" />
+         
+         <TextView
+            android:id="@+id/end_time"
+            style="@style/BackgroundWorksActivityDialogContent"
+            android:text="19.13.2019 13:22:41"
+            android:textColor="@color/background_works_activity_dialog_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_text_size" />
+      </LinearLayout>
+      
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         
+         <TextView
+            style="@style/BackgroundWorksActivityDialogContentMono"
+            android:text="Süre            : "
+            android:textColor="@color/background_works_activity_dialog_mono_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_mono_text_size" />
+         
+         <TextView
+            android:id="@+id/duration"
+            style="@style/BackgroundWorksActivityDialogContent"
+            android:text="647ms"
+            android:textColor="@color/background_works_activity_dialog_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_text_size" />
+      </LinearLayout>
+      
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         
+         <TextView
+            style="@style/BackgroundWorksActivityDialogContentMono"
+            android:text="Öncelik         : "
+            android:textColor="@color/background_works_activity_dialog_mono_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_mono_text_size" />
+         
+         <TextView
+            android:id="@+id/priority"
+            style="@style/BackgroundWorksActivityDialogContent"
+            android:text="Normal"
+            android:textColor="@color/background_works_activity_dialog_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_text_size" />
+      
+      </LinearLayout>
+      
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         
+         <TextView
+            style="@style/BackgroundWorksActivityDialogContentMono"
+            android:text="Çalışma durumu  : "
+            android:textColor="@color/background_works_activity_dialog_mono_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_mono_text_size" />
+         
+         <TextView
+            android:id="@+id/state"
+            style="@style/BackgroundWorksActivityDialogContent"
+            android:text="Görev Tamamlandı"
+            android:textColor="@color/background_works_activity_dialog_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_text_size" />
+      </LinearLayout>
+      
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         
+         <TextView
+            style="@style/BackgroundWorksActivityDialogContentMono"
+            android:text="Hata            : "
+            android:textColor="@color/background_works_activity_dialog_mono_text_color"
+            android:textSize="@dimen/background_works_activity_dialog_mono_text_size" />
+         
+         <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            
+            <TextView
+               android:id="@+id/error"
+               style="@style/BackgroundWorksActivityDialogContent"
+               android:text="Hata yok"
+               android:textColor="@color/background_works_activity_dialog_text_color"
+               android:textSize="@dimen/background_works_activity_dialog_text_size" />
+         </ScrollView>
+      
+      </LinearLayout>
+   </LinearLayout>
+   
+   <RelativeLayout
+      android:layout_marginEnd="@dimen/dimen_16dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@id/background"
+      android:layout_marginBottom="@dimen/dimen_16dp"
+      android:orientation="horizontal">
+      
+      <Button
+         android:id="@+id/terminate_task"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toStartOf="@id/close"
+         android:enabled="false"
+         android:text="Görevi Sonlandır"
+         android:textAllCaps="true" />
+      
+      <Button
+         android:id="@+id/close"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentEnd="true"
+         android:layout_centerVertical="true"
+         android:text="Kapat" />
+   </RelativeLayout>
+   
+   
+
+</RelativeLayout>
+

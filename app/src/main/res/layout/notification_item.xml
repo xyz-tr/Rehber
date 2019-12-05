@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="150dp"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   app:cardElevation="3dp"
+   android:layout_marginBottom="7dp"
+   app:cardBackgroundColor="@color/light_background">
+
+   <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+      <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="0.7dp"
+         android:id="@+id/header"
+         android:background="@color/yellow_300">
+
+         <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="Yabancı"
+            android:padding="3dp"
+            android:textColor="@color/light_blue_300"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"/>
+      </RelativeLayout>
+      
+      <RelativeLayout
+         android:id="@+id/stars"
+         android:background="@color/yellow_300"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/header">
+
+         <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/groups_favorite"/>
+
+            <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/groups_favorite"/>
+
+            <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/groups_favorite"/>
+            <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/groups_favorite"/>
+
+            <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/groups_favorite"/>
+
+         </LinearLayout>
+      </RelativeLayout>
+      
+      <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/yellow_300"
+         android:layout_below="@id/stars">
+         
+         
+      </RelativeLayout>
+      
+      
+   </RelativeLayout>
+   
+   
+</androidx.cardview.widget.CardView>

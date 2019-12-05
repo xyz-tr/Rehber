@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".xyz.call.detail.activity.CallDetails"
+   android:fitsSystemWindows="true"
+   android:orientation="vertical">
+
+   <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      style="@style/ToolbarBase"
+      app:navigationIcon="@drawable/right_arow">
+
+      <com.tr.hsyn.telefonrehberi.util.ui.htext.evaporate.EvaporateTextView
+         android:id="@+id/myTitle"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:fontFamily="@font/nunito_regular"
+         android:text="arayan ismi"
+         android:textColor="@color/whitePrimary"
+         android:textSize="20sp" />
+   </androidx.appcompat.widget.Toolbar>
+
+   <include
+      layout="@layout/call_details_header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/mainHeader"
+      android:layout_marginBottom="0.5dp"
+      android:layout_marginTop="0.5dp" />
+
+   <include
+      layout="@layout/call_details_date"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/date" />
+
+
+   <include layout="@layout/fragment_call_details"/>
+   
+
+</LinearLayout>
